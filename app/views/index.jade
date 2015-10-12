@@ -1,0 +1,704 @@
+extends layouts/_default
+
+block content
+    - var title = { description: 'Заголовок' }
+    #main
+        #benefits.benefits.text--center.margtop100
+            .container
+                .row.around-xs.benefit.anchor
+                    .col-xs-2.benefit__block
+                        a(href="#accordion-1").accordion-section-title-id
+                            i.ico.ico-benefit
+                            | Документы, листовки,
+                            | бланки
+                    .col-xs-2.benefit__block
+                        a(href="#accordion-2").accordion-section-title-id
+                            i.ico.ico-benefit
+                            | Чертежи и плакаты
+                    .col-xs-2.benefit__block
+                        a(href="#accordion-3").accordion-section-title-id
+                            i.ico.ico-benefit
+                            | Срочное фото и
+                            | фотопечать
+                    .col-xs-2.benefit__block
+                        a(href="#accordion-4").accordion-section-title-id
+                            i.ico.ico-benefit
+                            | Сканирование
+                .row.around-xs.benefit.margtop100
+                    .col-xs-2.benefit__block
+                        a(href="#accordion-5").accordion-section-title-id
+                            i.ico.ico-benefit
+                            | Ламинирование и
+                            | брошюровка
+                    .col-xs-2.benefit__block
+                        a(href="#accordion-6").accordion-section-title-id
+                            i.ico.ico-benefit
+                            | Печати и штампы
+                    .col-xs-2.benefit__block
+                        a(href="#accordion-7").accordion-section-title-id
+                            i.ico.ico-benefit
+                            | Сувениры
+                    .col-xs-2.benefit__block
+                        a(href="#accordion-8").accordion-section-title-id
+                            i.ico.ico-benefit
+                            | Визитки
+        #shares.shares.text--center.text--xlg.margtop50
+            .container
+                h2.margbot70 Специальные предложения
+                #shares_anim.row.around-xs
+                    .col-xs-4
+                        img(src="images/share__01.png", alt="")
+                        b Визитки за 15 мин
+                            br
+                            | от 299 руб
+                    .col-xs-4
+                        img(src="images/share__02.png", alt="")
+                        b Скидка 10% студентам
+                    .col-xs-4
+                        img(src="images/share__03.png", alt="")
+                        b Система скидок для
+                            | корпоративных клиентов
+        #services.services.margtop70
+            .container
+                h2.text--center Услуги
+                .row.around-xs
+                    .col-xs-12
+                        .accordion
+                            .accordion-section
+                                a.accordion-section-title.row.start-xs.middle-xs(href="#accordion-1")
+                                    .img
+                                        img(src="images/services-ico__01.png", alt="")
+                                    | Документы, листовки, бланки
+                                    i.icon-plus
+                                .accordion-section-content(id="accordion-1")
+                                    img(src="images/services__01.jpg", alt="")
+                                    h2 Цифровая печать
+                                    h4 ЧЕРНО-БЕЛАЯ ЦИФРОВАЯ ПЕЧАТЬ ИЗ ФАЙЛА
+                                    table.table.table-hover
+                                        thead
+                                            tr
+                                                th Формат
+                                                th 1-10 стр.
+                                                th 11-20 стр.
+                                                th 21-199 стр.
+                                                th с 200 стр.
+                                                th Заливка >25% (независимо от кол-ва)
+                                        tbody
+                                            tr.table-head
+                                                td А4
+                                                td 7
+                                                td 6
+                                                td 5
+                                                td 4
+                                                td 10
+                                            tr.table-head
+                                                td А3
+                                                td 15
+                                                td 13
+                                                td 10
+                                                td 9
+                                                td 25
+                                    p.text--success Цена в руб. за один оттиск на бумаге 80 г/м2.  
+                                    p Стоимость приведена для печати файлов .PDF, .DOC, .DOCX, .RTF, .TXT, .JPG. Остальные форматы файлов печатаются по цене: А4 - 10 рублей, А3 - 15 рублей.
+                                    h4.margtop40 ЧЕРНО-БЕЛОЕ КОПИРОВАНИЕ
+                                    table.table.table-hover
+                                        thead
+                                            tr
+                                                th Формат
+                                                th Отдельные неперфорированные листы соответствующего формата с заливкой <25%
+                                                th Сшитые или ветхие оригиналы. Оригиналы нестандартного размера. Заливка <25%
+                                                th Копирование листов с заливкой >25%
+                                        tbody
+                                            tr.table-head
+                                                td А4
+                                                td 5
+                                                td 7
+                                                td 10
+                                            tr.table-head
+                                                td А3
+                                                td 10
+                                                td 15
+                                                td 25
+                                    p.text--success Цена в руб. за один оттиск на бумаге 80 г/м2.    
+                                    h4.margtop40 ЦВЕТНАЯ ЦИФРОВАЯ ПЕЧАТЬ И КОПИРОВАНИЕ
+                                    table.table.table-hover
+                                        thead
+                                            tr
+                                                th Формат
+                                                th 1-9 шт.
+                                                th 10-29 шт.
+                                                th 30-49 шт.
+                                                th 50-99 шт.
+                                                th 100-199 шт.
+                                                th 200-299 шт.
+                                                th >300 шт.
+                                                th Печать листов с заливкой <5% (независимо от кол-ва).
+                                        tbody
+                                            tr.table-head
+                                                td А4
+                                                td 32
+                                                td 30
+                                                td 28
+                                                td 25
+                                                td 22
+                                                td 19
+                                                td 16
+                                                td 15
+                                            tr.table-head
+                                                td А3, SRA3
+                                                td 60
+                                                td 54
+                                                td 45
+                                                td 39
+                                                td 35
+                                                td 30
+                                                td 23
+                                                td 30
+                                    p.text--success Цена в руб. за один оттиск на бумаге 80 г/м2. 
+                                    p.text--success Печать продукции менее А4 формата осуществляется на формате А3, размещением макета на листе в максимально возможном количестве, с последующей резкой под нужный размер. Резка оплачивается отдельно.    
+                                    .row.end-xs.margtop50
+                                        .col-xs-4.text--center
+                                            a(href="#feedback").btn.btn--lg.btn--primary.fancybox Заказать
+                                        .col-xs-4.text--right
+                                            a(href="#").btn.btn--lg.btn--info.fancybox
+                                             i.icon-download-alt
+                                             | Скачать полный прайс
+                            .accordion-section
+                                a.accordion-section-title.row.start-xs.middle-xs(href="#accordion-2")
+                                    .img
+                                        img(src="images/services-ico__02.png", alt="")
+                                    | Чертежи и плакаты
+                                    i.icon-plus
+                                .accordion-section-content(id="accordion-2")
+                                    img(src="images/services__02.jpg", alt="")
+                                    h2 Широкоформатная печать
+                                    h4 ПЕЧАТЬ И КОПИРОВАНИЕ ЧЕРТЕЖЕЙ
+                                    table.table.table-hover
+                                        thead
+                                            tr
+                                                th Материал
+                                                th А2
+                                                th А1
+                                                th А0
+                                                th Погонный метр при ширине 914 мм
+                                                th Погонный метр при ширине 1066 мм
+                                        tbody
+                                            tr.table-head
+                                                td Ч/Б, бумага 80 г/м2
+                                                td 60
+                                                td 90
+                                                td 150
+                                                td 150
+                                                td 210
+                                            tr.table-head
+                                                td ЦВЕТ, бумага 80 г/м2
+                                                td 120
+                                                td 190
+                                                td 300
+                                                td 300
+                                                td 400
+                                            tr.table-head
+                                                td Калька 52 г/м2
+                                                td +30
+                                                td +60
+                                                td +120
+                                                td +120
+                                                td -
+                                    p.text--success Копирование цветных чертежей, а также копирование черно-белых чертежей на бумагу большей плотности рассчитывается путем сложения стоимости сканирования оригинала и стоимости печати копии. 
+                                    p.text--success Печать чертежей с заливкой более 20% + 50% к базовой стоимости.
+                                    h4.margtop40 ФАЛЬЦОВКА ЧЕРТЕЖЕЙ
+                                    table.table.table-hover
+                                        thead
+                                            tr
+                                                th(rowspan="2") Изначальный формат
+                                                th(colspan="2") Выходной формат
+                                            tr
+                                                th A4
+                                                th A3
+                                        tbody
+                                            tr.table-head
+                                                td А3
+                                                td 8
+                                                td -
+                                            tr.table-head
+                                                td А2
+                                                td 15
+                                                td 20
+                                            tr.table-head
+                                                td А1
+                                                td 25
+                                                td 30
+                                            tr.table-head
+                                                td А0
+                                                td 35
+                                                td 40
+                                    h4.margtop40 ЦВЕТНАЯ ШИРОКОФОРМАТНАЯ ПЕЧАТЬ
+                                    table.table.table-hover
+                                        thead
+                                            tr
+                                                th Материал
+                                                th A2
+                                                th A1
+                                                th A0
+                                                th Погонный метр при ширине 610 мм
+                                                th Погонный метр при ширине 914 мм
+                                                th Погонный метр при ширине 1066 мм
+                                        tbody
+                                            tr.table-head
+                                                td Матовая фотобумага, 120 г/м2
+                                                td 300
+                                                td 550
+                                                td 950
+                                                td 715
+                                                td 915
+                                                td 1100
+                                            tr.table-head
+                                                td Матовая фотобумага, 160 г/м2
+                                                td 340
+                                                td 590
+                                                td 990
+                                                td 810
+                                                td 980
+                                                td -
+                                            tr.table-head
+                                                td Фотобумага глянец 235 г/м2;
+                                                    | Фотобумага полуглянец 235 г/м2;
+                                                    | Матовая фотобумага 210 г/м2
+                                                td 430
+                                                td 680
+                                                td 1300
+                                                td 1020
+                                                td 1150
+                                                td 1500
+                                            tr.table-head
+                                                td Холст, 295 г/м2
+                                                td 1125
+                                                td 1525
+                                                td 1300
+                                                td -
+                                                td -
+                                                td 2500
+                                            tr.table-head
+                                                td Самоклеющаяся бумага, 190 г/м2
+                                                td 550
+                                                td 950
+                                                td 1900
+                                                td 1310
+                                                td 1580
+                                                td 2250
+                                    h4.margtop40 НАКАТКА НА ПЕНОКАРТОН
+                                    table.table.table-hover
+                                        thead
+                                            tr
+                                                th Материал
+                                                th Размер
+                                                th Стоимость
+                                        tbody
+                                            tr.table-head
+                                                td(rowspan="3") Пенокартон 5 мм
+                                                td 700х500
+                                                td 375
+                                            tr
+                                                td 700х1000
+                                                td 750
+                                            tr
+                                                td 1000х1400
+                                                td 1500
+                                    p Накатка на пенокартон возможна только при печати на самоклеющейся бумаге. Стоимость печати самоклеющейся бумаги в стоимость накатки не включена.
+                                    p Крепления для пенокартона к стене в комплект не входят и продаются отдельно по цене 70 руб./шт.
+                                    .row.end-xs.margtop50
+                                        .col-xs-4.text--center
+                                            a(href="#feedback").btn.btn--lg.btn--primary.fancybox Заказать
+                                        .col-xs-4.text--right
+                                            a(href="#").btn.btn--lg.btn--info.fancybox
+                                             i.icon-download-alt
+                                             | Скачать полный прайс
+                            .accordion-section
+                                a.accordion-section-title.row.start-xs.middle-xs(href="#accordion-3")
+                                    .img
+                                        img(src="images/services-ico__03.png", alt="")
+                                    | Срочное фото и фотопечать
+                                    i.icon-plus
+                                .accordion-section-content(id="accordion-3")
+                                    img(src="images/services__03.jpg", alt="")
+                                    h2 Фотопечать и Фото на документы
+                                    h4 ФОТО НА ДОКУМЕНТЫ
+                                    table.table.table-hover
+                                        thead
+                                            tr
+                                                th Вид документа
+                                                th Размеры
+                                                th Количество в 1 комплекте
+                                                th Цена
+                                        tbody
+                                            tr.table-head
+                                                td Паспорт гражданина РФ
+                                                td 3,7х4,7
+                                                td 4 шт.
+                                                td 200
+                                            tr.table-head
+                                                td Загранпаспорт
+                                                td 3,5х4,5
+                                                td 4 шт.
+                                                td 200
+                                            tr.table-head
+                                                td Визы
+                                                td 3,5х4,5; 5х5; 4,5х5,5
+                                                td 4 шт.
+                                                td 200
+                                            tr.table-head
+                                                td Документы
+                                                td 3х4; 4х5; 4х6;
+                                                td 4 шт.
+                                                td 200
+                                            tr.table-head
+                                                td Документы
+                                                td 5х5; 5х6
+                                                td 2 шт.
+                                                td 200
+                                            tr.table-head
+                                                td Личное дело
+                                                td 9х12
+                                                td 1 шт.
+                                                td 200
+                                            tr.table-head
+                                                td Печать дополнительного комплекта
+                                                td -
+                                                td -
+                                                td 80
+                                            tr.table-head
+                                                td Замена одежды
+                                                td -
+                                                td -
+                                                td 400
+                                            tr.table-head
+                                                td Электронная версия фото
+                                                td -
+                                                td -
+                                                td бесплатно
+                                    p Фото на документы с электронного носителя (комплект) печать подготовленного макета - 80 руб., подготовка макета к печати оплачивается отдельно исходя из 1500 руб./час (25 руб./мин.)
+                                    h4.margtop40 ПЕЧАТЬ ФОТОГРАФИЙ
+                                    table.table.table-hover
+                                        thead
+                                            tr
+                                                th Формат
+                                                th 1-19 шт.
+                                                th 20-99 шт.
+                                                th от 100 шт.
+                                        tbody
+                                            tr.table-head
+                                                td 10х15
+                                                td 16
+                                                td 15
+                                                td 75
+                                            tr.table-head
+                                                td А4
+                                                td 85
+                                                td 80
+                                                td 75
+                                            tr.table-head
+                                                td А3
+                                                td 160
+                                                td 150
+                                                td 140
+                                    p Работа по выбору фотографий для печати в течении 5мин. - бесплатно. Далее оплачивается отдельно, исходя из 1500 руб / час (25 руб. минута).
+                                    .row.end-xs.margtop50
+                                        .col-xs-4.text--center
+                                            a(href="#feedback").btn.btn--lg.btn--primary.fancybox Заказать
+                                        .col-xs-4.text--right
+                                            a(href="#").btn.btn--lg.btn--info.fancybox
+                                             i.icon-download-alt
+                                             | Скачать полный прайс
+                            .accordion-section
+                                a.accordion-section-title.row.start-xs.middle-xs(href="#accordion-4")
+                                    .img
+                                        img(src="images/services-ico__04.png", alt="")
+                                    | Сканирование
+                                    i.icon-plus
+                                .accordion-section-content(id="accordion-4")
+                                    img(src="images/services__04.jpg", alt="")
+                                    h2 Сканирование
+                                    h4 ЧЕРНО-БЕЛОЕ СКАНИРОВАНИЕ
+                                    table.table.table-hover
+                                        thead
+                                            tr
+                                                th Формат
+                                                th А4
+                                                th А3
+                                                th А2
+                                                th А1
+                                                th А0
+                                                th Погонный метр (914 мм)
+                                        tbody
+                                            tr.table-head
+                                                td Без распознания
+                                                td 10
+                                                td 20
+                                                td 40
+                                                td 60
+                                                td 120
+                                                td 100
+                                            tr.table-head
+                                                td С распознанием
+                                                td +10
+                                                td +20
+                                                td -
+                                                td -
+                                                td -
+                                                td -
+                                            tr.table-head
+                                                td Разрешение 600 dpi
+                                                td 20
+                                                td 40
+                                                td 80
+                                                td 120
+                                                td 240
+                                                td 200
+                                    p При распознании документов с формулами, графическими элементами, коррективами "от руки", возможны неточные отображения распознанного шрифта. Доработка полученного документа сотрудником копировального центра оплачивается отдельно из расчета 1500 руб./час
+                                    h4.margtop40 ЦВЕТНОЕ СКАНИРОВАНИЕ
+                                    table.table.table-hover
+                                        thead
+                                            tr
+                                                th Формат
+                                                th А4
+                                                th А3
+                                                th А2
+                                                th А1
+                                                th А0
+                                                th Погонный метр (914 мм)
+                                        tbody
+                                            tr.table-head
+                                                td Разрешение 300 dpi
+                                                td 20
+                                                td 40
+                                                td 100
+                                                td 200
+                                                td 300
+                                                td 250
+                                            tr.table-head
+                                                td Разрешение 600 dpi
+                                                td 30
+                                                td 60
+                                                td 200
+                                                td 400
+                                                td 600
+                                                td 500
+                                            tr.table-head
+                                                td С распознанием
+                                                td +10
+                                                td +20
+                                                td -
+                                                td -
+                                                td -
+                                                td -
+                                    p При распознании документов с формулами, графическими элементами, коррективами "от руки", возможны неточные отображения распознанного шрифта. Доработка полученного документа сотрудником копировального центра оплачивается отдельно из расчета 1500 руб./час
+                                    .row.end-xs.margtop50
+                                        .col-xs-4.text--center
+                                            a(href="#feedback").btn.btn--lg.btn--primary.fancybox Заказать
+                                        .col-xs-4.text--right
+                                            a(href="#").btn.btn--lg.btn--info.fancybox
+                                             i.icon-download-alt
+                                             | Скачать полный прайс
+                            .accordion-section
+                                a.accordion-section-title.row.start-xs.middle-xs(href="#accordion-5")
+                                    .img
+                                        img(src="images/services-ico__05.png", alt="")
+                                    | Послепечатная обработка
+                                    i.icon-plus
+                                .accordion-section-content(id="accordion-5")
+                                    img(src="images/services__05.jpg", alt="")
+                                    h2 Послепечатная обработка
+                                    h4 ЛАМИНИРОВАНИЕ
+                                    table.table.table-hover
+                                        thead
+                                            tr
+                                                th Формат
+                                                th до А4
+                                                th А3
+                                        tbody
+                                            tr.table-head
+                                                td Глянец, 80 мкм
+                                                td 40
+                                                td 80
+                                            tr.table-head
+                                                td Глянец, 200 мкм
+                                                td 70
+                                                td -
+                                            tr.table-head
+                                                td Матовая, 150 мкм
+                                                td 90
+                                                td -
+                                    h4.margtop40 БРОШЮРОВКА НА ПРУЖИНЫ
+                                    table.table.table-hover
+                                        thead
+                                            tr
+                                                th(rowspan="3") Формат
+                                                th(colspan="3") Количество листов
+                                            tr
+                                                th Пластиковая или металлическая пружина
+                                                th Пластиковая пружина
+                                                th Пластиковая пружина
+                                            tr
+                                                th до 120 листов
+                                                th 121-250 листов
+                                                th 251-470 листов
+                                        tbody
+                                            tr.table-head
+                                                td А4, А5
+                                                td 120
+                                                td 180
+                                                td 250
+                                            tr.table-head
+                                                td А3 (по короткой стороне)
+                                                td 150
+                                                td 220
+                                                td 300
+                                    p Цена включает стоимость пружины, обложки и подложки.
+                                        br
+                                        | Замена листов — 80 руб.
+                                    .row.end-xs.margtop50
+                                        .col-xs-4.text--center
+                                            a(href="#feedback").btn.btn--lg.btn--primary.fancybox Заказать
+                                        .col-xs-4.text--right
+                                            a(href="#").btn.btn--lg.btn--info.fancybox
+                                             i.icon-download-alt
+                                             | Скачать полный прайс
+                            .accordion-section
+                                a.accordion-section-title.row.start-xs.middle-xs(href="#accordion-6")
+                                    .img
+                                        img(src="images/services-ico__06.png", alt="")
+                                    | Печати и штампы
+                                    i.icon-plus
+                                .accordion-section-content(id="accordion-6")
+                                    img(src="images/services__06.jpg", alt="")
+                                    h2 Печати и штампы
+                                    table.table.table-hover
+                                        thead
+                                            tr
+                                                th(colspan="2") Разработка макета новой печати / Восстановление по оттиску
+                                        tbody
+                                            tr.table-head
+                                                td простая
+                                                td от 300
+                                            tr.table-head
+                                                td сложная
+                                                td от 600
+                                            tr.table-head
+                                                td Изготовление клише
+                                                td 400
+                                        thead
+                                            tr
+                                                th(colspan="2") Оснастка для штампов
+                                        tbody
+                                            tr.table-head
+                                                td простая
+                                                td 150
+                                            tr.table-head
+                                                td автоматическая
+                                                td 450
+                                    .row.end-xs.margtop50
+                                        .col-xs-4.text--center
+                                            a(href="#feedback").btn.btn--lg.btn--primary.fancybox Заказать
+                                        .col-xs-4.text--right
+                                            a(href="#").btn.btn--lg.btn--info.fancybox
+                                             i.icon-download-alt
+                                             | Скачать полный прайс
+                            .accordion-section
+                                a.accordion-section-title.row.start-xs.middle-xs(href="#accordion-7")
+                                    .img
+                                        img(src="images/services-ico__07.png", alt="")
+                                    | Сувениры с Вашим фото
+                                    i.icon-plus
+                                .accordion-section-content(id="accordion-7")
+                                    img(src="images/services__07.jpg", alt="")
+                                    p Раздел в разработке
+                                    .row.end-xs.margtop50
+                                        .col-xs-4.text--center
+                                            a(href="#feedback").btn.btn--lg.btn--primary.fancybox Заказать
+                                        .col-xs-4.text--right
+                                            a(href="#").btn.btn--lg.btn--info.fancybox
+                                             i.icon-download-alt
+                                             | Скачать полный прайс
+                            .accordion-section
+                                a.accordion-section-title.row.start-xs.middle-xs(href="#accordion-8")
+                                    .img
+                                        img(src="images/services-ico__08.png", alt="")
+                                    | Визитки
+                                    i.icon-plus
+                                .accordion-section-content(id="accordion-8")
+                                    img(src="images/services__08.jpg", alt="")
+                                    h4 ПЕЧАТЬ ВИЗИТОК
+                                    table.table.table-hover
+                                        thead
+                                            tr
+                                                th Тираж
+                                                th 50 шт.
+                                                th 100 шт.
+                                                th 200 шт.
+                                                th 300 шт.
+                                                th 500 шт.
+                                        tbody
+                                            tr.table-head
+                                                td Односторонние
+                                                td 199
+                                                td 299
+                                                td 590
+                                                td 879
+                                                td 1390
+                                            tr.table-head
+                                                td Двухсторонние
+                                                td 349
+                                                td 599
+                                                td 1179
+                                                td 1779
+                                                td 2890
+                                    p.text--success Стоимость односторонних и двухсторонних визиток указана на матовой бумаге плотностью 300 грамм на м2.
+                                        br
+                                        | Дизайнерская бумага кат. 1: + 4 рубля/шт.
+                                        br
+                                        | Дизайнерская бумага кат. 2: + 6 руб/шт.
+                                        br
+                                        | Дизайнерская бумага кат. 3: + 9 руб/шт.
+                                    .row.end-xs.margtop50
+                                        .col-xs-4.text--center
+                                            a(href="#feedback").btn.btn--lg.btn--primary.fancybox Заказать
+                                        .col-xs-4.text--right
+                                            a(href="#").btn.btn--lg.btn--info.fancybox
+                                             i.icon-download-alt
+                                             | Скачать полный прайс
+
+        #reviews.reviews.text--center.margtop50
+            .container
+                h2 Отзывы наших клиентов
+                .row.around-xs
+                    .col-xs-12
+                        include modules/_carousel
+        #partners.partners.text--center
+            .container
+                h2 Наши партнеры
+                .row.around-xs.margtop50
+                    - for (var x = 1; x <= 6; x++)
+                        .col-xs-2
+                            img(src="images/partners__0#{x}.png", alt="")
+        #googlemap.googlemap.p-relative
+            .googlemap__address
+                .googlemap__address-item.text--center
+                    p
+                        b Наш адрес:&nbsp;
+                        br
+                        | Санкт-Петербург,&nbsp;
+                        | Щербаков пер., 12
+                    p
+                        b График работы:&nbsp;
+                        br
+                        | ежедневно с 9:00 до 21:00
+                    p
+                        b Сайт:&nbsp;
+                        | www.flyp.ru
+                        br
+                        b Телефон:&nbsp;
+                        | 8 (812) 407-16-50
+                        br
+                        b E-mail:&nbsp;
+                        | operator@flycopy.ru
+    iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.2395761407174!2d30.345036299999997!3d59.9281667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631af31672c9f%3A0x30c4a5c3909de5a5!2z0KnQtdGA0LHQsNC60L7QsiDQv9C10YAuLCAxMiwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTAwMg!5e0!3m2!1sru!2sru!4v1444291268601" width="100%", height="662", frameborder="0", style="border:0; pointer-events: none;", allowfullscreen)

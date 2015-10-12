@@ -1,0 +1,21 @@
+.carousel.text--lg
+    .flexslider
+        ul.slides
+            - for (var x = 1; x <= 3; x++)
+                li.active
+                    img(src="images/reviews__01.png", alt="", onselectstart="return false")
+                    p Юлия Сергеевна
+                li
+                    img(src="images/reviews__02.png", alt="")
+                    p Сергей Миронов
+                li
+                    img(src="images/reviews__03.png", alt="")
+                    p Алена Старовойтова
+.slider
+    .flexslider
+        ul.slides
+            - for (var x = 1; x <= 7; x++)
+                li.active
+                    blockquote #{x} #{x} #{x}  Визитки сделаны быстро и хорошо. Не понравилось что, как оказалос, мой макет был меньше
+                        | нужного и дорисовка картинки была сделана без моего ведома, об этом я узнал только при получении.
+                        | Очень проблематично найти точку выдачи заказа, я потратил на это почти час...

@@ -1,0 +1,28 @@
+header
+    .header__top
+        .container.p-relative
+            .logo
+                img(src="images/logo.png", alt="Logo")
+            .row.end-xs.middle-xs
+                .col-xs-4.text--right
+                    a(href="tel:88124071650").text--md Тел:&nbsp;
+                        b 8 (812) 407-16-50
+                .col-xs-4.text--center
+                    a(href="mailto:operator@flycopy.ru").text--md Email:&nbsp;
+                        b operator@flycopy.ru
+                .col-xs-2.text--right
+                    ul.list--inline.text--info.social__block
+                        li.vk
+                            a(href="#")
+                                i.icon-vkontakte
+                        li.fa
+                            a(href="#")
+                                i.icon-fa
+                        li.inst
+                            a(href="#")
+                                i.icon-instagram
+    .header__bottom
+        .container
+            include _navbar
+include _slideshow
+.clearfix

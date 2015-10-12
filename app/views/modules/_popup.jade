@@ -1,0 +1,38 @@
+#phone.popup
+    .popup__header.text--center
+        h3 Заказать
+    form.row.around-xs.padtop20.padbot10
+        .col-xs-7
+            .form-group
+                label Город:
+                input.form-control(type="text", required)
+        .col-xs-7
+            .form-group
+                label Ваш  телефон:
+                input.form-control.validate-phone(type="text", required)
+        .col-xs-7
+            .form-group.text--center
+                a(href="#", class="btn btn--primary btn--lg", type="submit") Отправить
+#feedback.popup
+    .popup__header.text--center
+        h3 Заказать
+    form.row.around-xs.padtop20.padbot10
+        .col-xs-7
+            .form-group
+                label Город:
+                input.form-control(type="text", required)
+        .col-xs-7
+            .form-group
+                label Ваш  телефон:
+                input.form-control.validate-phone(type="text", required)
+        .col-xs-7
+            .form-group
+                label Ваш  email:
+                input.form-control(type="email", required)
+        .col-xs-7
+            .form-group
+                label Комментарий:
+                textarea.form-control
+        .col-xs-7
+            .form-group.text--center
+                a(href="#", class="btn btn--primary btn--lg", type="submit") Отправить

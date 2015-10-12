@@ -1,0 +1,240 @@
+//
+// Base -> Typography
+// --------------------------------------------------
+
+
+// Headings
+// -------------------------
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $headings-color;
+
+  small {
+    font-weight: normal;
+    line-height: 1;
+  }
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  margin-bottom: $line-height-computed;
+
+  small {
+    font-size: 65%;
+  }
+}
+h4,
+h5,
+h6 {
+  margin-top: ($line-height-computed / 2);
+  margin-bottom: ($line-height-computed / 2);
+
+  small {
+    font-size: 75%;
+  }
+}
+
+h1 { font-size: $font-size-h1; color: $brand-primary; }
+h2 { font-size: $font-size-h2; }
+h3 { font-size: $font-size-h3; }
+h4 { font-size: $font-size-h4; }
+h4 { font-size: $font-size-h4; }
+h5 { font-size: $font-size-h5; }
+h6 { font-size: $font-size-h6; }
+
+
+// Body text
+// -------------------------
+
+p {
+  margin: 0 0 ($line-height-computed / 2);
+}
+
+b {
+  font-weight: 500;
+}
+
+// Alignment
+.text--left           { text-align: left; }
+.text--right          { text-align: right; }
+.text--center         { text-align: center; }
+.text--justify        { text-align: justify; }
+.text--nowrap         { white-space: nowrap; }
+
+// Responsive alignment
+.text--xs--left   { text-align: left; }
+.text--xs--right  { text-align: right; }
+.text--xs--center { text-align: center; }
+
+@if $use-adaprive == true {
+  @media (min-width: $screen-sm-min) {
+    .text--sm--left {
+      text-align: left;
+    }
+    .text--sm--right {
+      text-align: right;
+    }
+    .text--sm--center {
+      text-align: center;
+    }
+  }
+
+  @media (min-width: $screen-md-min) {
+    .text--md--left {
+      text-align: left;
+    }
+    .text--md--right {
+      text-align: right;
+    }
+    .text--md--center {
+      text-align: center;
+    }
+  }
+
+  @media (min-width: $screen-lg-min) {
+    .text--lg--left {
+      text-align: left;
+    }
+    .text--lg--right {
+      text-align: right;
+    }
+    .text--lg--center {
+      text-align: center;
+    }
+  }
+}
+
+// Transformation
+.text--lowercase      { text-transform: lowercase; }
+.text--uppercase      { text-transform: uppercase; }
+.text--capitalize     { text-transform: capitalize; }
+
+// Size
+.text--sm {
+  font-size: $font-size-small;
+}
+.text--md {
+  font-size: $font-size-medium;
+}
+.text--lg {
+  font-size: $font-size-large;
+}
+.text--xlg {
+  font-size: $font-size-xlarge;
+}
+
+@include text-emphasis-variant('.text--primary', $brand-primary);
+
+@include text-emphasis-variant('.text--success', $gray);
+
+@include text-emphasis-variant('.text--info', $brand-info);
+
+@include text-emphasis-variant('.text--warning', $state-warning-text);
+
+@include text-emphasis-variant('.text--danger', $state-danger-text);
+
+// Lists
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: ($line-height-computed / 2);
+  ul,
+  ol {
+    margin-bottom: 0;
+  }
+}
+
+// List options
+@mixin list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+.list--unstyled {
+  @include list-unstyled;
+}
+
+// Inline turns list items into inline-block
+.list--inline {
+  @include list-unstyled;
+  margin-left: -5px;
+  margin-bottom: 0;
+  > li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.list-styled {
+  margin: 0;
+  padding: 0;
+  > li {
+    list-style-type: none;
+    margin-bottom: 5px;
+    &:before {
+      content: '—';
+      margin-right: 10px;
+    }
+  }
+}
+
+
+// Blockquotes
+blockquote {
+  padding: ($line-height-computed * 1.8) ($line-height-computed * 3.18);
+  margin: 0 0 $line-height-computed;
+  font-size: $blockquote-font-size;
+  background-color: $blockquote-background-color;
+  position: relative;
+  color: $gray-dark;
+  text-align: left;
+  margin-top: 12px;
+  p,
+  ul,
+  ol {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 11.5px 12px 11.5px;
+    border-color: transparent transparent $lighter transparent;
+    position: absolute;
+    top: -12px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  &:after {
+    content: '\e806';
+    font-family: "fontello";
+    color: $gray-base;
+    font-size: 39px;
+    position: absolute;
+    top: 22px;
+    left: 22px;
+  }
+
+  // Note: Deprecated small and .small as of v3.1.0
+  footer,
+  small,
+  .small {
+    display: block;
+    font-size: 80%; // back to default font-size
+    line-height: $line-height-base;
+    color: $blockquote-small-color;
+
+    &:before {
+      content: '\2014 \00A0'; // em dash, nbsp
+    }
+  }
+}

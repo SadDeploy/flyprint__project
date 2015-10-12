@@ -1,0 +1,11 @@
+{
+  "name": "url",
+  "private": true,
+  "dependencies": {
+    "fancybox": "~2.1.5",
+    "flexslider": "~2.5.0",
+    "jquery": "~2.1.3"
+  },
+  "devDependencies": {
+  }
+}

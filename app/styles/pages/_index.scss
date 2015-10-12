@@ -1,0 +1,157 @@
+//
+// Pages -> Home
+// ------------------------------------
+
+// benefits
+.benefits {}
+.benefit {
+  .benefit__block {
+    font-weight: 500;
+    .ico {
+      content: '';
+      width: 122px;
+      height: 112px;
+      display: block;
+      margin: auto;
+      margin-bottom: 42px;
+      background: url("../images/benefits__ico.png") no-repeat;
+    }
+    &:hover {
+      a {color: $brand-primary;
+        text-decoration: none;}
+      .ico {
+        background: url("../images/benefits__ico-hover.png") no-repeat;
+      }
+    }
+    &:first-child .ico-benefit {
+      background-position: 12px 0;
+    }
+    &:nth-child(2) .ico-benefit {
+      background-position: -227px 0;
+    }
+    &:nth-child(3) .ico-benefit {
+      background-position: -466px 0;
+    }
+    &:nth-child(4) .ico-benefit {
+      background-position: -708px 0;
+    }
+  }
+  &:nth-child(2) {
+    .benefit__block {
+      &:first-child .ico-benefit {
+        background-position: 12px -297px;
+      }
+      &:nth-child(2) .ico-benefit {
+        background-position: -227px -297px;
+      }
+      &:nth-child(3) .ico-benefit {
+        background-position: -466px -297px;
+      }
+      &:nth-child(4) .ico-benefit {
+        background-position: -708px -297px;
+      }
+    }
+  }
+}
+// benefits
+
+// shares
+.shares {
+  background-color: $gray-lighter;
+  padding: 80px 0;
+  img {
+    margin-bottom: 44px;
+  }
+}
+// shares
+
+// services
+.services {}
+.accordion {
+  margin: 50px;
+  .accordion-section-title {
+    padding: 13px 7px;
+    border-top: 1px solid #dedede;
+    border-bottom: 0;
+    text-decoration: none;
+    position: relative;
+    @include transition(all ease-in-out .5s);
+    font-size: $font-size-medium;
+    color: black;
+    font-weight: 500;
+    &:hover {
+      color: $brand-primary;
+      text-decoration: none;
+    }
+    .img {margin-right: 20px;
+      width: 50px;}
+    i {
+      position: absolute;
+      top: 32%;
+      right: 15px;
+    }
+    i:before {font-size: 25px;}
+  }
+  li:last-of-type .accordion-section-title  {
+    border-bottom: 1px solid #dedede;
+  }
+  .accordion-section-content {
+    margin: 0;
+    border-top: 0;
+    padding-bottom: 51px;
+    display: none;
+    img {
+      margin-bottom: 20px;
+    }
+  }
+  .accordion-section-title.active {
+    .icon-plus:before {
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0.5);
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+  img {margin-bottom: 0;}
+}
+// services
+
+// reviews
+.reviews {
+  background-color: $brand-primary;
+  color: $lighter;
+  padding: 60px 0;
+}
+// reviews
+
+// partners
+.partners {
+  padding: 76px 0 120px;
+}
+// partners
+
+//googlemap
+.googlemap {}
+.googlemap__address {
+  position: absolute;
+  height: 100%;
+  width: 960px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.googlemap__address-item {
+  position: absolute;
+  z-index: 9;
+  top: 111px;
+  left: 0;
+  width: 360px;
+  height: 360px;
+  padding: 60px 70px;
+  background-color: $lighter;
+  border: 5px solid $brand-primary;
+  @include border-radius(50%)
+}
+//googlemap
